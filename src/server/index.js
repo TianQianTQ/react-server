@@ -22,7 +22,7 @@ const port = 3000
 app.use(express.static('public'))
 app.get('/', function (req, res) {
 	const content = renderToString((
-		<StaticRouter location={req.url}>
+		<StaticRouter >
 			<Home />
 		</StaticRouter>
 	))
